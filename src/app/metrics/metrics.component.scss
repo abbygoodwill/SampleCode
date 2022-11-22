@@ -1,0 +1,65 @@
+.cardHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #0b3370;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.formCard {
+    margin-bottom: 2.5em;
+    background: #adadad;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 9px 3px rgb(0 0 0 / 60%);
+}
+.cardTitle {
+    border-right: 1px solid #fdb912;
+    padding-right: 10px;
+}
+.cardDescription {
+    padding-left: 10px;
+    color: white;
+}
+.goalsForm {
+    margin: 20px 0px;
+}
+.form-group.goalInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.goalInput input, select {
+    border-radius: 6px;
+    padding: 6px;
+    background-color: #fff;
+    border: transparent;
+}
+input:focus, select:focus {
+    outline: #fdb913 solid 2px;
+}
+.submitFormSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+button.bottomButtons {
+    padding: 5px 50px;
+    background: #fdb912;
+    border: #fdb912;
+    border-radius: 5px;
+    color: #0b3370;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+button.bottomButtons:hover {
+    background: #071c39;
+    color: white;
+}

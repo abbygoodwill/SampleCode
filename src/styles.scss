@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Global Styles
+body {
+    background: #f8f8f8;
+}
+h1 {
+    background: #071c39;
+    color: white;
+    border-bottom: 2px solid #fdb912;
+    margin-bottom: 0px;
+}
+.darkBlueText {
+    color: #071c39;
+}
+.componentTitle {
+    margin: 1em 0px;
+}

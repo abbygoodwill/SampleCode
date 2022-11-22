@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="row">
+        <div class="componentTitle">
+            <h2 class="darkBlueText">{{projectName}} Metrics</h2>
+        </div>
+    </div>
+    <form [formGroup]="goalsForm" (ngSubmit)="onSubmit()">
+    <div class="longTermGoals formCard">
+        <div class="cardHeader">
+            <div class="cardTitle">
+                <h3>Long Term Goals</h3>
+            </div>
+            <div class="cardDescription darkBlueText">What are the long term goals for this project? What is the target value for each goal?</div>
+        </div>
+        <div class="goalsForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Goal 1</label>
+                        <input
+                            type="text"
+                            formControlName="longTermGoal1"
+                        />
+                    </div>
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Target Value 1</label>
+                        <input
+                            type="text"
+                            formControlName="longTermTarget1"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Goal 2</label>
+                        <input
+                            type="text"
+                            formControlName="longTermGoal2"
+                        />
+                    </div>
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Target Value 2</label>
+                        <input
+                            type="text"
+                            formControlName="longTermTarget2"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shortTermGoals formCard">
+        <div class="cardHeader">
+            <div class="cardTitle">
+                <h3>Short Term Goals</h3>
+            </div>
+            <div class="cardDescription darkBlueText">What are the short term goals for this project? What is the target value for each goal?</div>
+        </div>
+        <div class="goalsForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Short Term Goal 1</label>
+                        <input
+                            type="text"
+                            formControlName="shortTermGoal1"
+                        />
+                    </div>
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Target Value 1</label>
+                        <input
+                            type="text"
+                            formControlName="shortTermTarget1"
+                        />
+                    </div>
+                    <div class="form-group goalInput">
+                        <label>Check-In</label>
+                        <select class="darkBlueText" formControlName="checkIn1">
+                            <option *ngFor="let option of selectItems" value="{{option.id}}" class="selectOptions">
+                                {{ option.name }}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Short Term Goal 2</label>
+                        <input
+                            type="text"
+                            formControlName="shortTermGoal2"
+                        />
+                    </div>
+                    <div class="form-group goalInput">
+                        <label class="darkBlueText">Target Value 2</label>
+                        <input
+                            type="text"
+                            formControlName="shortTermTarget2"
+                        />
+                    </div>
+                    <div class="form-group goalInput">
+                        <label>Check-In</label>
+                        <select class="darkBlueText" formControlName="checkIn2">
+                            <option *ngFor="let option of selectItems" value="{{option.id}}" class="selectOptions">
+                                {{ option.name }}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="submitFormSection">
+        <button class="bottomButtons" type="submit">Save</button>
+    </div>
+    </form>
+</div>
